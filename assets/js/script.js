@@ -64,8 +64,6 @@ var taskFormHandler = function(event) {
 };
 
 var createTaskEl = function(taskDataObj) {
-    console.log(taskDataObj);
-    console.log(taskDataObj.status);
     // create list item
     var listItemEl = document.createElement("li");
     listItemEl.className = "task-item";
@@ -214,7 +212,6 @@ var taskStatusChangeHandler = function(event) {
             tasks[i].status = statusValue;
             }
     }
-    console.log(tasks);
 
     saveTasks();
 };
